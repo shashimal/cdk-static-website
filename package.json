@@ -2,7 +2,7 @@
   "name": "cdk-static-website",
   "version": "0.1.0",
   "bin": {
-    "cdk-static-website": "bin/cdk-static-website.js"
+    "cdk-static-website": "src/index.js"
   },
   "scripts": {
     "build": "tsc",
