@@ -1,14 +1,7 @@
 #!/usr/bin/env node
 import * as cdk from 'aws-cdk-lib';
-import {StaticSite} from "./stacks/static-site/static-site";
 import {Config} from "./config/config";
-import {PublicHostedZone} from "./stacks/dns/public-hosted-zone";
-import {CloudfrontCertificate} from "./stacks/dns/cloudfront-certificate";
 import {InfraPipeline} from "./stacks/infra-pipeline/infra-pipeline";
-import {Stage} from "aws-cdk-lib";
-import {DnsStackStage} from "./stacks/infra-pipeline/dns-stack-stage";
-import {CloudfrontCertificateStackStage} from "./stacks/infra-pipeline/cloudfront-certificate-stack-stage";
-import {StaticSiteStackStage} from "./stacks/infra-pipeline/static-site-stack-stage";
 import {ApplicationStackStage} from "./stacks/infra-pipeline/application-stack-stage";
 
 const app = new cdk.App();
