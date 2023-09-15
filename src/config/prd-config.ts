@@ -1,5 +1,4 @@
 import {IConfig} from "./config";
-
 export const PrdConfig:IConfig = {
     account: "",
     region: "",

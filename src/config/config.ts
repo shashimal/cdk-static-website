@@ -1,6 +1,5 @@
 import {DevConfig} from "./dev-config";
 import {PrdConfig} from "./prd-config";
-
 export interface IConfig {
     account: string
     region: string
@@ -11,7 +10,6 @@ export interface IConfig {
     websiteIndexDocument: string
     websiteErrorDocument: string
 }
-
 export class Config {
 
     public static getConfig = (env: string): IConfig => {

@@ -1,5 +1,4 @@
 import {IConfig} from "./config";
-
 export const DevConfig:IConfig = {
     account: "793209430381",
     region: "ap-southeast-1",
