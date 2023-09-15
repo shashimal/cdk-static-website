@@ -53,12 +53,12 @@ export class StaticSite extends Stack {
             zone: this.props.zone
         })
 
-        new BucketDeployment(this, `${this.props.appName}-bucket-deployment`, {
-            sources: [Source.asset('site-contents')],
-            destinationBucket: s3Bucket,
-            distribution: this.cloudfrontDistribution,
-            distributionPaths: ['/*'],
-        });
+        // new BucketDeployment(this, `${this.props.appName}-bucket-deployment`, {
+        //     sources: [Source.asset('site-contents')],
+        //     destinationBucket: s3Bucket,
+        //     distribution: this.cloudfrontDistribution,
+        //     distributionPaths: ['/*'],
+        // });
 
     }
 
