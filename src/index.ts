@@ -22,7 +22,8 @@ const appEnv = {account: config.account, region: config.region};
 
 
 const pipeline = new InfraPipeline(app, `${appName}-pipeline-stack`, {
-    env: appEnv
+    env: appEnv,
+    crossRegionReferences: true
 })
 
 const stage = new ApplicationStackStage(app, 'ApplicationStage', {
